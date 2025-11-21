@@ -1,5 +1,3 @@
 export default function App() {
-  const teste = "teste ";
-  console.log(teste);
-  return <h1>Hello World!</h1>;
+  return <h1 className="text-green-300">Hello World!</h1>;
 }
