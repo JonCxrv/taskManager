@@ -1,3 +1,7 @@
+import Button from "./Button";
+import TrashIcon from "../assets/icons/trash.svg?react";
+import AddIcon from "../assets/icons/add.svg?react";
+
 const Tasks = () => {
   return (
     <div className="w-full px-8 py-16">
@@ -9,8 +13,14 @@ const Tasks = () => {
           <h2 className="text-xl font-semibold">Minhas Tarefas</h2>
         </div>
         <div className="flex items-center gap-4">
-          <button>Limpar Tarefas</button>
-          <button>Nova Tarefa</button>
+          <Button>
+            Limpar tarefas
+            <TrashIcon />
+          </Button>
+          <Button variant="primary">
+            Nova tarefa
+            <AddIcon />
+          </Button>
         </div>
       </div>
     </div>
